@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/root"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:minHeight="72dp">
+
+  <LinearLayout
+    android:id="@+id/titleContainer"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/title"
+      style="@style/TextAppearance.AppCompat.Subhead"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="2dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@android:color/white"/>
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/text"
+      style="@style/TextAppearance.AppCompat.Body1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="2dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@android:color/darker_gray"/>
+  </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
